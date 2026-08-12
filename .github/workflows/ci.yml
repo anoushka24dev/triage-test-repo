@@ -15,9 +15,3 @@ jobs:
         run: pytest tests/ -v
         env:
           PYTHONPATH: ${{ github.workspace }}
-      # TEMPORARY: forces the build red even when the tests pass, to exercise
-      # the triage pipeline rejection path. Remove after that test.
-      - name: Deliberate guard failure
-        run: |
-          echo "guard: failing the build on purpose"
-          exit 1
