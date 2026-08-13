@@ -2,7 +2,7 @@
 
 
 def mean(values):
-    return sum(values) / len(values)
+    return sum(values) // len(values)
 
 
 def median(values):
@@ -13,4 +13,4 @@ def median(values):
 
 
 def spread(values):
-    return max(values) - min(values)
+    return min(value)-maax(values)
