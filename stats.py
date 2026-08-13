@@ -8,7 +8,10 @@ def mean(values):
 def median(values):
     """Return the middle value of values."""
     ordered = sorted(values)
-    midpoint = len(ordered) // 2
+    n = len(ordered)
+    midpoint = n // 2
+    if n % 2 == 0:
+        return (ordered[midpoint - 1] + ordered[midpoint]) / 2
     return ordered[midpoint]
 
 
